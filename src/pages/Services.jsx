@@ -215,11 +215,6 @@ function Services() {
                 </div>
                 <h3 className="step-title">{step.title}</h3>
                 <p className="step-description">{step.description}</p>
-                {index < process.length - 1 && (
-                  <div className="process-connector">
-                    <div className="connector-line"></div>
-                  </div>
-                )}
               </div>
             ))}
           </div>

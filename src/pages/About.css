@@ -6,7 +6,7 @@
 .about-hero {
   position: relative;
   background: var(--bg-primary);
-  padding: 8rem 0 6rem;
+  padding: 4rem 0 2.5rem;
   text-align: center;
   overflow: hidden;
 }
@@ -47,9 +47,12 @@
 }
 
 @keyframes floatOrb {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
+
   50% {
     transform: translate(50px, 50px) scale(1.1);
   }
@@ -90,7 +93,7 @@
 }
 
 .about-story {
-  padding: 8rem 0;
+  padding: 2.5rem 0 2.5rem;
   background: var(--bg-secondary);
 }
 
@@ -186,7 +189,7 @@
   background: var(--bg-card);
   backdrop-filter: blur(20px);
   border-radius: 24px;
-  padding: 2rem;
+  padding: 3rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--border-color);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -216,9 +219,12 @@
 }
 
 @keyframes floatCard {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-15px);
   }
@@ -246,10 +252,22 @@
   color: var(--text-primary);
 }
 
-.values,
-.team {
-  padding: 8rem 0;
+.values {
+  padding: 0rem 0 0;
   background: var(--bg-primary);
+}
+
+.team {
+  padding: 0 0 2rem;
+  background: var(--bg-primary);
+}
+
+.values .section-header {
+  margin-bottom: 0.5rem;
+}
+
+.team .section-header {
+  margin-bottom: 0.5rem;
 }
 
 .values-grid,
@@ -322,9 +340,12 @@
 }
 
 @keyframes iconBounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }
@@ -371,21 +392,59 @@
 }
 
 @media (max-width: 968px) {
+  .about-hero {
+    padding: 3rem 0 2rem;
+  }
+
   .story-content {
     grid-template-columns: 1fr;
   }
-  
+
   .story-text,
   .story-image {
     transform: translateY(30px);
   }
-  
+
   .story-image.slide-in-right {
     transform: translateY(0);
   }
-  
+
   .story-stats {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .about-story {
+    padding: 2rem 0;
+  }
+
+  .values,
+  .team {
+    padding: 1rem 0;
+  }
+
+  .values .section-header,
+  .team .section-header {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .about-story {
+    padding: 2rem 0;
+  }
+
+  .values,
+  .team {
+    padding: 1rem 0;
+  }
+
+  .values .section-header,
+  .team .section-header {
+    margin-bottom: 1rem;
   }
 }

@@ -1104,7 +1104,7 @@
 @media (max-width: 968px) {
   .hero-section {
     min-height: auto;
-    padding: 4rem 0;
+    padding: 4rem 0 3rem;
   }
 
   .hero-title,
@@ -1123,6 +1123,10 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 0 2rem;
+  }
+
   .hero-buttons {
     flex-direction: column;
   }

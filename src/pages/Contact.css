@@ -6,7 +6,7 @@
 .contact-hero {
   position: relative;
   background: var(--bg-primary);
-  padding: 8rem 0 6rem;
+  padding: 5rem 0 4rem;
   text-align: center;
   overflow: hidden;
 }
@@ -408,6 +408,10 @@
 }
 
 @media (max-width: 968px) {
+  .contact-hero {
+    padding: 4rem 0 3rem;
+  }
+  
   .contact-wrapper {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -425,5 +429,11 @@
   
   .contact-form {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 3rem 0 2rem;
   }
 }
