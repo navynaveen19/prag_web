@@ -74,6 +74,10 @@
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
 }
 
+.footer-section {
+  text-align: center;
+}
+
 .footer-title {
   font-size: 1.125rem;
   font-weight: 700;
@@ -85,6 +89,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-links li {
@@ -108,6 +115,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-contact li {
@@ -115,12 +125,16 @@
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .contact-icon {
   font-size: 1.25rem;
   flex-shrink: 0;
-  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .contact-label {
@@ -131,6 +145,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 1.2;
 }
 
 .contact-value {
